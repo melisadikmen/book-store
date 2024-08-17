@@ -5,15 +5,16 @@ import { BookCardListComponent } from "./book-card-list/book-card-list.component
 import { NavbarComponent } from "./navbar/navbar.component";
 import { Router } from '@angular/router';
 import { BookService } from '../book.service';
-import {MatIconModule} from '@angular/material/icon';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
-  imports: [MatTableModule, BookCardListComponent, NavbarComponent, MatIconModule,MatBadgeModule]
+  imports: [MatTableModule, BookCardListComponent, NavbarComponent, MatIconModule, MatBadgeModule,MatButtonModule]
 })
 export class HomePageComponent {
   books: BookModel[] | any = BooksData
@@ -48,13 +49,7 @@ export class HomePageComponent {
   addToCart(event: BookModel) {
     this.cartList.push(event);
     this._bookService.addCart(this.cartList);
-     
-   
   }
-
-  
-
- 
 }
 
 export interface BookModel {
