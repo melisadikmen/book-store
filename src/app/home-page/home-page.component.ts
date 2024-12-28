@@ -7,14 +7,14 @@ import { Router } from '@angular/router';
 import { BookService } from '../book.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
-  imports: [MatTableModule, BookCardListComponent, NavbarComponent, MatIconModule, MatBadgeModule,MatButtonModule]
+  imports: [MatTableModule, BookCardListComponent, NavbarComponent, MatIconModule, MatBadgeModule, MatButtonModule]
 })
 export class HomePageComponent {
   books: BookModel[] | any = BooksData

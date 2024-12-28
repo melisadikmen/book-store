@@ -10,6 +10,10 @@
     padding: 12px;
     margin: 12px;
     background-color: #FAF3F0;
+    -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 17px;
 
     div {
         margin-bottom: 8px;
@@ -28,4 +32,9 @@
 
 .form-star {
     font-size: 12px;
+}
+
+.mat-mdc-unelevated-button.mat-primary {
+    --mdc-filled-button-container-color: #91AC8F;
+
 }

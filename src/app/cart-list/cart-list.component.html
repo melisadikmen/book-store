@@ -1,9 +1,9 @@
 <div class="container">
     <div class="back">
         <button style=" position: relative;color: black" (click)="goToHomePage()" mat-icon-button color="primary"
-      aria-label="Example icon button with a home icon">
-      <mat-icon>home</mat-icon>
-    </button>
+            aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+        </button>
     </div>
     @for (book of cartList; track $index) {
     <div class="field">
@@ -15,8 +15,9 @@
         <div> {{ book.author }} </div>
         <div class="form-star">
             <fa-icon [icon]="faStar"></fa-icon>
-            {{ book.star }} </div>
-        <button mat-flat-button color="primary" (click)="removeFromCart(book)" >Remove</button>
+            {{ book.star }}
+        </div>
+        <button mat-flat-button color="primary" (click)="removeFromCart(book)">Remove</button>
     </div>
     }
 </div>

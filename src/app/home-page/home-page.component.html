@@ -1,7 +1,6 @@
 <app-navbar [categories]="categories" (categoryName)="setBooksForCategories($event)"> </app-navbar>
 <div class="buttons">
-    <button mat-flat-button  (click)="goToCart()">Sepete git</button>
+    <button mat-flat-button (click)="goToCart()">Sepete git</button>
     <mat-icon [matBadge]="cartList.length" matBadgeColor="warn">home</mat-icon>
 </div>
-<app-book-card-list [bookList]="filteredBooks" (addCart)="addToCart($event)" ></app-book-card-list>
-
+<app-book-card-list [bookList]="filteredBooks" (addCart)="addToCart($event)"></app-book-card-list>
